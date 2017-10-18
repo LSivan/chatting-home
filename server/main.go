@@ -85,5 +85,6 @@ func mustWrite(conn net.Conn,word []byte,addr string){
 	if err != nil {
 		fmt.Printf("err-----------%v,i----------->%d", err, i)
 		delete(connMaps, addr)
+		delete(nicknameMaps,addr)
 	}
 }
